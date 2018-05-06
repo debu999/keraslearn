@@ -17,6 +17,7 @@ eggs/
 .eggs/
 lib/
 lib64/
+Lib/
 parts/
 sdist/
 var/
@@ -86,6 +87,9 @@ celerybeat-schedule
 .venv
 venv/
 ENV/
+pyvenv.cfg
+#venv Scripts exclude
+Scripts/
 
 # Spyder project settings
 .spyderproject
@@ -99,3 +103,23 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# exclude data from source control by default
+/data/
+
+# Pycharm
+.idea
+Include/
+
+# VS Code
+.vscode/
+
+# Spyder
+.spyproject/
+
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
+
+# Database
+*.db
+*.rdb
